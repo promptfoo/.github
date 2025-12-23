@@ -10,12 +10,11 @@
 
 ### Ship agents, not vulnerabilities
 
-[Website](https://www.promptfoo.dev) • [Documentation](https://www.promptfoo.dev/docs/) • [GitHub](https://github.com/promptfoo) • [Discord](https://discord.gg/promptfoo) • [X/Twitter](https://x.com/promptfoo) • [Bluesky](https://bsky.app/profile/promptfoo.bsky.social) • [LinkedIn](https://www.linkedin.com/company/promptfoo/)
+[Website](https://www.promptfoo.dev) • [Blog](https://www.promptfoo.dev/blog/) • [LinkedIn](https://www.linkedin.com/company/promptfoo/)
 
-[![NPM Version](https://img.shields.io/npm/v/promptfoo)](https://www.npmjs.com/package/promptfoo)
-[![GitHub Stars](https://img.shields.io/github/stars/promptfoo/promptfoo)](https://github.com/promptfoo/promptfoo)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white)](https://discord.gg/promptfoo)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![NPM](https://img.shields.io/badge/NPM-promptfoo-FE2C06?logo=npm&logoColor=white)](https://www.npmjs.com/package/promptfoo)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-FE2C06?logo=discord&logoColor=white)](https://discord.gg/promptfoo)
+[![License: MIT](https://img.shields.io/badge/License-MIT-FE2C06)](https://opensource.org/licenses/MIT)
 
 **AI security testing platform for LLMs, agents, and RAG systems**
 
@@ -80,9 +79,11 @@ Promptfoo helps you build secure AI applications by detecting:
 
 ### 👥 Community
 
-**Join our community of AI security practitioners:**
-
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white)](https://discord.gg/promptfoo)
+**Connect with us:**
+- [GitHub](https://github.com/promptfoo) - Star our repos and follow updates
+- [Discord](https://discord.gg/promptfoo) - Join our community of AI security practitioners
+- [X/Twitter](https://x.com/promptfoo) - Latest news and updates
+- [Bluesky](https://bsky.app/profile/promptfoo.bsky.social) - Follow us on Bluesky
 
 **Contributing:**
 - [Contributing Guidelines](https://github.com/promptfoo/promptfoo/blob/main/CONTRIBUTING.md)
