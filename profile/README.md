@@ -29,6 +29,7 @@ Trusted by 85 Fortune 500 companies and 200K+ developers
 ```shell
 npx promptfoo@latest init
 npx promptfoo@latest eval
+npx promptfoo@latest view
 ```
 
 **[Get Started →](https://www.promptfoo.dev/docs/getting-started/)** · **[Enterprise →](https://www.promptfoo.dev/contact/)**
