@@ -3,113 +3,76 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="banner-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="banner-light.png">
-  <img alt="Promptfoo" src="banner-light.png" width="600">
+  <img alt="Promptfoo - AI security testing platform with detective red panda logo" src="banner-light.png" width="600">
 </picture>
 
 <br/>
 
 ### Ship agents, not vulnerabilities
 
-[Website](https://www.promptfoo.dev) • [Blog](https://www.promptfoo.dev/blog/) • [LinkedIn](https://www.linkedin.com/company/promptfoo/)
+[Website](https://www.promptfoo.dev) • [Docs](https://www.promptfoo.dev/docs/) • [Blog](https://www.promptfoo.dev/blog/) • [Discord](https://discord.gg/promptfoo)
 
-[![NPM](https://img.shields.io/badge/NPM-promptfoo-FE2C06?logo=npm&logoColor=white)](https://www.npmjs.com/package/promptfoo)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-FE2C06?logo=discord&logoColor=white)](https://discord.gg/promptfoo)
+[![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat&color=FE2C06&logo=github)](https://github.com/promptfoo/promptfoo)
+[![npm downloads](https://img.shields.io/npm/dm/promptfoo?style=flat&color=FE2C06&logo=npm)](https://www.npmjs.com/package/promptfoo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-FE2C06)](https://opensource.org/licenses/MIT)
 
-**AI security testing platform for LLMs, agents, and RAG systems**
+**AI security testing for LLMs, agents, and RAG systems**
 
-Automated vulnerability detection and remediation trusted by 85 Fortune 500 companies and 200K+ developers
-
----
+Trusted by 85 Fortune 500 companies and 200K+ developers
 
 </div>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+---
 
-### 🚀 Get Started
+### 🚀 Quick Start
 
-**Developer Tools**
-- [CLI Installation](https://www.promptfoo.dev/docs/getting-started/) - Test locally in minutes
-- [Node.js Package](https://www.promptfoo.dev/docs/usage/node-package/) - Integrate with your code
-- [CI/CD Integration](https://www.promptfoo.dev/docs/integrations/github-action/) - Automate security testing
+```shell
+npx promptfoo@latest init
+npx promptfoo@latest eval
+```
 
-**Security Testing**
-- [Red Teaming](https://www.promptfoo.dev/docs/red-team/) - Find vulnerabilities before attackers do
-- [Code Scanning](https://www.promptfoo.dev/docs/code-scanning/) - Detect LLM risks in your IDE
-- [Model Evaluation](https://www.promptfoo.dev/docs/guides/evaluate-models/) - Compare and benchmark models
+**[Get Started →](https://www.promptfoo.dev/docs/getting-started/)** · **[Enterprise →](https://www.promptfoo.dev/contact/)**
 
-</td>
-<td width="50%" valign="top">
+---
 
-### 🛠️ Core Projects
+### 🛠️ What We Do
 
-**[promptfoo](https://github.com/promptfoo/promptfoo)** ⭐ 9.6k
-Test your prompts, agents, and RAGs. Red teaming and vulnerability scanning for LLMs.
+|                                                                                 |                                                            |
+| ------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **[Red Teaming](https://www.promptfoo.dev/docs/red-team/)**                     | Automated vulnerability discovery with 100+ attack plugins |
+| **[Evaluations](https://www.promptfoo.dev/docs/getting-started/)**              | Test prompts, models, and RAG pipelines — 100% local       |
+| **[Code Scanning](https://www.promptfoo.dev/docs/code-scanning/)**              | SAST for AI applications in your IDE and CI/CD             |
+| **[GitHub Action](https://www.promptfoo.dev/docs/integrations/github-action/)** | Security testing in every pull request                     |
 
-**[promptfoo-action](https://github.com/promptfoo/promptfoo-action)**
-GitHub Action for CI/CD security testing
+---
 
-**[evil-mcp-server](https://github.com/promptfoo/evil-mcp-server)**
-Red team testing for Model Context Protocol servers
+### 🔒 Security & Privacy
 
-**[js-rouge](https://github.com/promptfoo/js-rouge)**
-JavaScript ROUGE metrics for summarization evaluation
+**What we detect:** Prompt injections · Jailbreaks · PII leaks · Hallucinations · Tool misuse
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+**Compliance:** SOC 2 Type II · ISO 27001 · HIPAA
 
-### 🔒 Security & Compliance
+**Data model:**
 
-Promptfoo helps you build secure AI applications by detecting:
-- Prompt injections & jailbreaks
-- PII & sensitive data leaks
-- Hallucinations & policy violations
-- Adversarial attacks
+- **Evals** — 100% local, API keys never leave your machine
+- **Red teaming** — Your target runs locally; attack generation via our API or bring your own keys
 
-**Certifications:** SOC2, ISO 27001, HIPAA
+---
 
-**Privacy-first:** Run evaluations locally or in your cloud
+### 📦 Projects
 
-</td>
-<td width="50%" valign="top">
+| Repository                                                            | Description                                          |
+| --------------------------------------------------------------------- | ---------------------------------------------------- |
+| **[promptfoo](https://github.com/promptfoo/promptfoo)**               | Core CLI and library for LLM testing and red teaming |
+| **[promptfoo-action](https://github.com/promptfoo/promptfoo-action)** | GitHub Action for CI/CD security testing             |
+| **[evil-mcp-server](https://github.com/promptfoo/evil-mcp-server)**   | Security testing for MCP servers                     |
+
+---
 
 ### 👥 Community
 
-**Connect with us:**
-- [GitHub](https://github.com/promptfoo) - Star our repos and follow updates
-- [Discord](https://discord.gg/promptfoo) - Join our community of AI security practitioners
-- [X/Twitter](https://x.com/promptfoo) - Latest news and updates
-- [Bluesky](https://bsky.app/profile/promptfoo.bsky.social) - Follow us on Bluesky
+**Connect:** [Discord](https://discord.gg/promptfoo) · [X/Twitter](https://x.com/promptfoo) · [LinkedIn](https://www.linkedin.com/company/promptfoo/)
 
-**Contributing:**
-- [Contributing Guidelines](https://github.com/promptfoo/promptfoo/blob/main/CONTRIBUTING.md)
-- [Good First Issues](https://github.com/promptfoo/promptfoo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-- [Report Issues](https://github.com/promptfoo/promptfoo/issues)
+**Contribute:** [Contributing Guide](https://www.promptfoo.dev/docs/contributing/) · [Open Issues](https://github.com/promptfoo/promptfoo/issues)
 
-**Resources:**
-- [Blog](https://www.promptfoo.dev/blog/)
-- [LLM Vulnerability Database](https://www.promptfoo.dev/docs/red-team/vulnerability-types/)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
----
-
-### Ready to secure your AI applications?
-
-```bash
-npm install -g promptfoo
-promptfoo init
-promptfoo eval
-```
-
-**[Get Started →](https://www.promptfoo.dev/docs/getting-started/)** • **[Enterprise Solutions →](https://www.promptfoo.dev/contact/)**
-
-</div>
+**Learn:** [LLM Vulnerability Database](https://www.promptfoo.dev/docs/red-team/vulnerability-types/) · [Security Research Blog](https://www.promptfoo.dev/blog/)
