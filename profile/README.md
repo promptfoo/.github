@@ -18,7 +18,7 @@
 
 **AI security testing for LLMs, agents, and RAG systems**
 
-Trusted by 85 Fortune 500 companies and 200K+ developers
+Trusted by 25% of the Fortune 500 and 300K+ developers
 
 </div>
 
