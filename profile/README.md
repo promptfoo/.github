@@ -18,7 +18,7 @@
 
 **AI security testing for LLMs, agents, and RAG systems**
 
-Trusted by 85 Fortune 500 companies and 200K+ developers
+Trusted by 25% of the Fortune 500 and 300K+ developers
 
 </div>
 
@@ -73,6 +73,8 @@ npx promptfoo@latest view
 | **[promptfoo](https://github.com/promptfoo/promptfoo)** | Test prompts, agents, and RAGs. Red teaming and vulnerability scanning for LLMs. |
 | **[promptfoo-action](https://github.com/promptfoo/promptfoo-action)** | GitHub Action for CI/CD security testing |
 | **[evil-mcp-server](https://github.com/promptfoo/evil-mcp-server)** | Red team testing for Model Context Protocol servers |
+| **[modelaudit](https://github.com/promptfoo/modelaudit)** | Static scanner that detects malicious code, backdoors, and vulnerabilities in ML model files |
+| **[promptfoo-python](https://github.com/promptfoo/promptfoo-python)** | Python wrapper for promptfoo |
 | **[js-rouge](https://github.com/promptfoo/js-rouge)** | JavaScript ROUGE metrics for summarization evaluation |
 
 ---
