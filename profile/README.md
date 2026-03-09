@@ -18,9 +18,15 @@
 
 **AI security testing for LLMs, agents, and RAG systems**
 
-Trusted by 25% of the Fortune 500 and 300K+ developers
+Trusted by 25% of the Fortune 500 and 350K+ developers
 
 </div>
+
+---
+
+> [!IMPORTANT]
+> Promptfoo is joining OpenAI. Promptfoo remains open source under MIT, community contributions remain welcome, and we will continue supporting multiple providers and models.
+> [Read the announcement →](https://www.promptfoo.dev/blog/promptfoo-joining-openai/)
 
 ---
 
