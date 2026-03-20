@@ -25,7 +25,7 @@ Trusted by 25% of the Fortune 500 and 350K+ developers
 ---
 
 > [!IMPORTANT]
-> Promptfoo is joining OpenAI. Promptfoo remains open source under MIT, community contributions remain welcome, and we will continue supporting multiple providers and models.
+> Promptfoo is now part of OpenAI. Promptfoo remains open source under MIT, community contributions remain welcome, and we will continue supporting multiple providers and models.
 > [Read the announcement →](https://www.promptfoo.dev/blog/promptfoo-joining-openai/)
 
 ---
