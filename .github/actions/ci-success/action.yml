@@ -1,0 +1,41 @@
+name: CI Success
+description: Wait for all other checks and statuses on the current commit to complete successfully.
+author: promptfoo
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  github-token:
+    description: Token used to read checks and statuses for the current repository.
+    required: true
+  check-name:
+    description: Name of the rollup check itself. Matching checks or statuses are ignored.
+    required: false
+    default: CI Success
+  timeout-seconds:
+    description: Total time to wait before failing.
+    required: false
+    default: "300"
+  poll-interval-seconds:
+    description: Delay between polls.
+    required: false
+    default: "10"
+  settle-polls:
+    description: Number of identical all-green polls required before succeeding.
+    required: false
+    default: "2"
+  ignore-checks:
+    description: Newline or comma separated regular expressions for checks or statuses to ignore.
+    required: false
+    default: ""
+  allowed-conclusions:
+    description: Newline or comma separated allowed terminal conclusions or states.
+    required: false
+    default: "success,neutral,skipped"
+  require-observed-checks:
+    description: Whether at least one non-self check or status must be observed before succeeding.
+    required: false
+    default: "true"
+runs:
+  using: node24
+  main: main.mjs

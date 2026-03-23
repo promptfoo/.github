@@ -25,6 +25,12 @@ Community health files in this repository serve as defaults for all promptfoo re
 - **LICENSE** - MIT License
 - _(More community health files coming soon)_
 
+### Shared GitHub Actions
+
+This repository also hosts first-party promptfoo GitHub Actions that can be reused across organization repositories:
+
+- **[.github/actions/ci-success](.github/actions/ci-success/README.md)** - Roll up all other checks and statuses into a single `CI Success` required check
+
 ## Learn More
 
 - [GitHub Documentation: Creating a default community health file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
