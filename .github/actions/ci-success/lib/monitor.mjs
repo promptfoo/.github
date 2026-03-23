@@ -1,13 +1,11 @@
-'use strict';
-
-const fs = require('node:fs');
+import fs from 'node:fs';
 
 const DEFAULT_ALLOWED_CONCLUSIONS = ['success', 'neutral', 'skipped'];
 const DEFAULT_CHECK_NAME = 'CI Success';
 const GITHUB_API_VERSION = '2022-11-28';
 const PER_PAGE = 100;
 
-function parseBoolean(value, defaultValue) {
+export function parseBoolean(value, defaultValue) {
   if (value == null || value === '') {
     return defaultValue;
   }
@@ -25,7 +23,7 @@ function parseBoolean(value, defaultValue) {
   throw new Error(`Invalid boolean value: ${value}`);
 }
 
-function parsePositiveInteger(value, fieldName) {
+export function parsePositiveInteger(value, fieldName) {
   const parsed = Number.parseInt(String(value), 10);
 
   if (!Number.isFinite(parsed) || parsed <= 0) {
@@ -35,7 +33,7 @@ function parsePositiveInteger(value, fieldName) {
   return parsed;
 }
 
-function parseList(value) {
+export function parseList(value) {
   if (!value) {
     return [];
   }
@@ -66,7 +64,7 @@ function loadGitHubEvent(env, fsModule = fs) {
   return JSON.parse(fsModule.readFileSync(eventPath, 'utf8'));
 }
 
-function determineRepository(env) {
+export function determineRepository(env) {
   const repository = env.GITHUB_REPOSITORY;
 
   if (!repository || !repository.includes('/')) {
@@ -76,7 +74,7 @@ function determineRepository(env) {
   return repository;
 }
 
-function determineCommitSha(env, event) {
+export function determineCommitSha(env, event) {
   if (event?.pull_request?.head?.sha) {
     return event.pull_request.head.sha;
   }
@@ -88,7 +86,7 @@ function determineCommitSha(env, event) {
   throw new Error('Unable to determine commit SHA from GITHUB_EVENT_PATH or GITHUB_SHA.');
 }
 
-function normalizeCheckRun(run) {
+export function normalizeCheckRun(run) {
   return {
     id: run.id,
     name: run.name,
@@ -98,7 +96,7 @@ function normalizeCheckRun(run) {
   };
 }
 
-function normalizeStatus(status) {
+export function normalizeStatus(status) {
   return {
     id: status.id,
     name: status.context,
@@ -187,7 +185,7 @@ async function listStatuses(client, sha) {
   return dedupeLatestByName(statuses.map(normalizeStatus));
 }
 
-async function listObservedChecks(client, sha, options) {
+export async function listObservedChecks(client, sha, options) {
   const [checkRuns, statuses] = await Promise.all([listCheckRuns(client, sha), listStatuses(client, sha)]);
 
   return [...checkRuns, ...statuses]
@@ -205,11 +203,11 @@ function isSuccessful(item, allowedConclusions) {
   return allowedConclusions.has(item.conclusion ?? '');
 }
 
-function renderObservation(item) {
+export function renderObservation(item) {
   return `${item.kind}:${item.name}:${item.status}/${item.conclusion ?? 'null'}`;
 }
 
-function evaluateObservedChecks(items, options) {
+export function evaluateObservedChecks(items, options) {
   if (items.length === 0 && options.requireObservedChecks) {
     return {
       outcome: 'waiting',
@@ -242,7 +240,7 @@ function evaluateObservedChecks(items, options) {
   };
 }
 
-async function waitForSuccess({
+export async function waitForSuccess({
   loadObservedChecks,
   options,
   log = console,
@@ -294,7 +292,7 @@ async function waitForSuccess({
   throw new Error('Timed out waiting for checks and statuses to complete.');
 }
 
-function buildOptions(env = process.env) {
+export function buildOptions(env = process.env) {
   const githubToken = getInput(env, 'github-token', env.GITHUB_TOKEN);
 
   if (!githubToken) {
@@ -313,7 +311,7 @@ function buildOptions(env = process.env) {
   };
 }
 
-async function runFromGithubAction({
+export async function runFromGithubAction({
   env = process.env,
   fetchImpl = fetch,
   fsModule = fs,
@@ -338,18 +336,3 @@ async function runFromGithubAction({
     log,
   });
 }
-
-module.exports = {
-  buildOptions,
-  determineCommitSha,
-  determineRepository,
-  evaluateObservedChecks,
-  listObservedChecks,
-  normalizeCheckRun,
-  normalizeStatus,
-  parseBoolean,
-  parseList,
-  parsePositiveInteger,
-  renderObservation,
-  waitForSuccess,
-};

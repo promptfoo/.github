@@ -1,15 +1,13 @@
-'use strict';
+import assert from 'node:assert/strict';
+import test from 'node:test';
 
-const test = require('node:test');
-const assert = require('node:assert/strict');
-
-const {
+import {
   buildOptions,
   evaluateObservedChecks,
   parseBoolean,
   parseList,
   waitForSuccess,
-} = require('../lib/monitor');
+} from '../lib/monitor.mjs';
 
 function createLogger() {
   return {

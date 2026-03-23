@@ -1,9 +1,9 @@
-'use strict';
+import { runFromGithubAction } from './lib/monitor.mjs';
 
-const { runFromGithubAction } = require('./lib/monitor');
-
-runFromGithubAction().catch((error) => {
+try {
+  await runFromGithubAction();
+} catch (error) {
   const message = error instanceof Error ? error.stack ?? error.message : String(error);
   console.error(message);
   process.exit(1);
-});
+}
