@@ -39,6 +39,14 @@ test('buildOptions reads inputs from the provided environment', () => {
   assert.equal(options.timeoutMs, 15_000);
 });
 
+test('buildOptions supports hyphenated action input keys from GitHub runtime', () => {
+  const options = buildOptions({
+    'INPUT_GITHUB-TOKEN': 'hyphen-token',
+  });
+
+  assert.equal(options.githubToken, 'hyphen-token');
+});
+
 test('evaluateObservedChecks fails when any completed check fails', () => {
   const result = evaluateObservedChecks(
     [

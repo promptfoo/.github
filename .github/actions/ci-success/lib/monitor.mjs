@@ -49,8 +49,9 @@ function compileIgnorePatterns(patterns) {
 }
 
 function getInput(env, name, defaultValue) {
-  const key = `INPUT_${name.replace(/ /gu, '_').replace(/-/gu, '_').toUpperCase()}`;
-  const value = env[key];
+  const normalizedKey = `INPUT_${name.replace(/ /gu, '_').replace(/-/gu, '_').toUpperCase()}`;
+  const rawKey = `INPUT_${name.replace(/ /gu, '_').toUpperCase()}`;
+  const value = env[normalizedKey] ?? env[rawKey];
   return value == null || value === '' ? defaultValue : value;
 }
 
