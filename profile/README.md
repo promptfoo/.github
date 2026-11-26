@@ -10,7 +10,7 @@
 
 ### Ship agents, not vulnerabilities
 
-[Website](https://www.promptfoo.dev) • [Docs](https://www.promptfoo.dev/docs/) • [Blog](https://www.promptfoo.dev/blog/) • [Discord](https://discord.gg/promptfoo)
+[Website](https://www.promptfoo.dev) • [Docs](https://www.promptfoo.dev/docs/) • [Blog](https://www.promptfoo.dev/blog/) • [Discord](https://discord.gg/gHPS9jjfbs)
 
 [![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat&color=FE2C06&logo=github)](https://github.com/promptfoo/promptfoo)
 [![npm downloads](https://img.shields.io/npm/dm/promptfoo?style=flat&color=FE2C06&logo=npm)](https://www.npmjs.com/package/promptfoo)
@@ -87,7 +87,7 @@ npx promptfoo@latest view
 
 ### 👥 Community
 
-**Connect:** [Discord](https://discord.gg/promptfoo) · [X/Twitter](https://x.com/promptfoo) · [Bluesky](https://bsky.app/profile/promptfoo.bsky.social) · [LinkedIn](https://www.linkedin.com/company/promptfoo/)
+**Connect:** [Discord](https://discord.gg/gHPS9jjfbs) · [X/Twitter](https://x.com/promptfoo) · [Bluesky](https://bsky.app/profile/promptfoo.bsky.social) · [LinkedIn](https://www.linkedin.com/company/promptfoo/)
 
 **Contribute:** [Contributing Guide](https://www.promptfoo.dev/docs/contributing/) · [Good First Issues](https://github.com/promptfoo/promptfoo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) · [Report Issues](https://github.com/promptfoo/promptfoo/issues)
 
